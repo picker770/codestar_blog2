@@ -23,7 +23,7 @@ def post_detail(request, slug):
 
     **Template:**
 
-    :template:`blog/post_detail.html`
+    :template:`blog2/post_detail.html`
     """
 
     queryset = Post.objects.filter(status=1)
@@ -31,6 +31,6 @@ def post_detail(request, slug):
 
     return render(
         request,
-        "blog/post_detail.html",
+        "blog2/post_detail.html",
         {"post": post},
     )
